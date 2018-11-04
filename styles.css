@@ -19,4 +19,16 @@ nav a:hover {
   color: #fdf;
   background: #979;
 }
+nav {
+  flex-direction: column;
+  width: 15%;
+  float: left;
+}
+
+main {
+  width: 85%;
+  padding: 0 1.5em;
+  float: right;
+  box-sizing: border-box;
+}
 
