@@ -15,8 +15,24 @@
       <a href="#">link text</a>
     </nav>
     <main>
-      <p>Click me to say hello</p>
+      <p id="hello">Click me to say hello</p>
     </main>
+    
+    <script>
+const hello = document.getElementById("hello");
+let count = 0;
+
+hello.addEventListener("click", greeting);
+
+function greeting()
+{
+  ++count;
+  console.log("Link clicked");
+  hello.innerHTML = "Clicked " + count + " times";
+  hello.classList.toggle("red");
+}    
+    </script>
+    
     <script src="js/scripts.js">
   </body>
 </html>
